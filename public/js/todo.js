@@ -1,10 +1,10 @@
 const todo = [
 ];
 
-function template(judul, status, index) {
+function template(judul, status, tanggal, index) {
     const elementHTML = `
         <li>
-            ${judul} | ${status} | @{NOW.format("YYYY-MM-DD HH:mm:ss")} | 
+            ${judul} | ${status} |  ${tanggal}| 
             <button onclick="ubah(${index})">Ubah</button> 
             <button onclick="hapus(${index})">Hapus</button>
         </li>
@@ -16,8 +16,9 @@ function template(judul, status, index) {
 function tambah() {
     const judul = prompt("Masukkan nama todo");
     const status = prompt("Masukkan status todo");
-    console.log(judul, status);
-    const databaru = {judul: judul, status: status};
+    const tanggal = `@{NOW.format("YYYY-MM-DD HH:mm:ss")}`;
+    console.log(judul, status, tanggal);
+    const databaru = {judul: judul, status: status, tanggal: tanggal};
     console.log(databaru);
 
     // menambahkan data ke variable todo
@@ -27,7 +28,7 @@ function tambah() {
     document.getElementById("data").innerHTML = ''; // refresh
     todo.map((value, index) => {
         console.log(value, "Ini index ", index);
-        document.getElementById("data").innerHTML += template(value.judul, value.status, value.tanggal)
+        document.getElementById("data").innerHTML += template(value.judul, value.status, value.tanggal, index)
     })
 }
 
