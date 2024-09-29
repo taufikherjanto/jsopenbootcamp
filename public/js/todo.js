@@ -16,7 +16,7 @@ function template(judul, status, tanggal, index) {
 function tambah() {
     const judul = prompt("Masukkan nama todo");
     const status = prompt("Masukkan status todo");
-    const tanggal = `@{NOW.format("YYYY-MM-DD HH:mm:ss")}`;
+    const tanggal = new Date().toLocaleString();
     console.log(judul, status, tanggal);
     const databaru = {judul: judul, status: status, tanggal: tanggal};
     console.log(databaru);
