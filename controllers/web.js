@@ -3,5 +3,5 @@ exports.install = function() {
 }
 
 function home(){
-    this.view('index')
+    this.view('home')
 }
