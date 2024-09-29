@@ -1,11 +1,10 @@
 const todo = [
-    { judul: 'Buat website', status: 'design', tanggal: '2024-09-29'}
 ];
 
 function template(judul, status, index) {
     const elementHTML = `
         <li>
-            ${judul} | ${status} | @{NOW.format("YYYY-MM-DD")} | 
+            ${judul} | ${status} | @{NOW.format("YYYY-MM-DD HH:mm:ss")} | 
             <button onclick="ubah(${index})">Ubah</button> 
             <button onclick="hapus(${index})">Hapus</button>
         </li>
@@ -25,6 +24,7 @@ function tambah() {
     todo.push(databaru);
 
     // update html
+    document.getElementById("data").innerHTML = ''; // refresh
     todo.map((value, index) => {
         console.log(value, "Ini index ", index);
         document.getElementById("data").innerHTML += template(value.judul, value.status, value.tanggal)
