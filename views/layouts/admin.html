@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin | Snipkode Publishing</title>
+    <!-- <link rel="stylesheet" href="css/admin.css"/> -->
+    @{import('admin.css')}
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+</head>
+
+<body>
+    <div class="header"></div>
+    <div class="sidebar">
+        @{view("components/sidebar")}
+    </div>
+    <div class="main">
+        <div class="grid">
+            @{body}
+        </div>
+    </div>
+</body>
+
+</html>

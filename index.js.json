@@ -1,6 +1,6 @@
 {
-	"pid": 16336,
-	"date": "2024-09-29T15:27:45.820Z",
+	"pid": 3160,
+	"date": "2024-11-23T19:37:23.687Z",
 	"port": 5000,
 	"ip": "0.0.0.0",
 	"stats": [
@@ -12,12 +12,12 @@
 				"build": 4081,
 				"app": "1.0.0"
 			},
-			"pid": 16336,
+			"pid": 3160,
 			"thread": "",
 			"mode": "debug",
 			"overload": 0,
-			"date": "2024-09-29T15:38:45.947Z",
-			"memory": 9.68,
+			"date": "2024-11-23T19:49:23.959Z",
+			"memory": 10.21,
 			"rm": 0,
 			"fm": 0,
 			"wm": 0,
@@ -31,16 +31,17 @@
 			"cm": 0,
 			"dbrm": 0,
 			"dbwm": 0,
-			"usage": 0,
-			"requests": 6,
+			"usage": 4,
+			"requests": 10,
 			"pending": 0,
 			"external": 0,
-			"errors": 0,
+			"errors": 3,
 			"timeouts": 0,
 			"online": 0,
-			"uptime": 12,
+			"uptime": 13,
 			"download": 0,
-			"upload": 0,
+			"upload": 0.002,
+			"lasterror": "2024-11-23T19:43:06.024Z unknown - Error: View \"components/sidebar\" not found.\n    at ControllerProto.$viewrender (C:\\Users\\taufik\\Coding\\OpenBootcamp\\node_modules\\@snipkode\\server\\index.js:15445:9)\n    at ControllerProto.view (C:\\Users\\taufik\\Coding\\OpenBootcamp\\node_modules\\@snipkode\\server\\index.js:15410:14)\n    at ControllerProto.$view (C:\\Users\\taufik\\Coding\\OpenBootcamp\\node_modules\\@snipkode\\server\\index.js:13583:19)\n    at eval (eval at view_parse (C:\\Users\\taufik\\Coding\\OpenBootcamp\\node_modules\\@snipkode\\server\\internal.js:1138:8), <anonymous>:1:584)\n    at Controller.eval (eval at view_parse (C:\\Users\\taufik\\Coding\\OpenBootcamp\\node_modules\\@snipkode\\server\\internal.js:1138:8), <anonymous>:1:742)\n    at ControllerProto.$viewrender (C:\\Users\\taufik\\Coding\\OpenBootcamp\\node_modules\\@snipkode\\server\\index.js:15478:21)\n    at ControllerProto.view (C:\\Users\\taufik\\Coding\\OpenBootcamp\\node_modules\\@snipkode\\server\\index.js:15410:14)\n    at ControllerProto.$viewrender (C:\\Users\\taufik\\Coding\\OpenBootcamp\\node_modules\\@snipkode\\server\\index.js:15650:16)\n    at ControllerProto.view (C:\\Users\\taufik\\Coding\\OpenBootcamp\\node_modules\\@snipkode\\server\\index.js:15410:14)\n    at Controller.<anonymous> (C:\\Users\\taufik\\Coding\\OpenBootcamp\\index.js:8:10)",
 			"status": []
 		}
 	]
